@@ -5,141 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RME Consulting | Strategic Talent Advisory</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-        body {
-            background: linear-gradient(135deg, #050b14 0%, #0d1527 100%);
-            color: #f3f4f6;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.01);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 45px 35px;
-            border-radius: 24px;
-            max-width: 500px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.7);
-        }
-        /* logonuzun yenilenen kırık beyaz, ince ve kurumsal hali */
-        .banner-logo-box {
-            background-color: #030814;
-            padding: 30px 20px;
-            border-radius: 12px;
-            margin: 0 auto 30px;
-            width: 100%;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        .banner-logo-text {
-            color: #d1d5db; /* tam istediğiniz açık gri / kırık beyaz tonu */
-            font-size: 32px;
-            font-weight: 400; /* kalınlık tamamen kaldırıldı */
-            letter-spacing: 1px;
-            line-height: 1.2;
-            margin-bottom: 12px;
-            text-transform: none; /* orijinal yazım korundu: Rme consulting */
-        }
-        .banner-logo-line {
-            border-top: 2px solid #546d88;
-            width: 85%;
-            margin: 0 auto;
-        }
-        h1 {
-            font-size: 26px;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 6px;
-            letter-spacing: -0.5px;
-        }
-        .subtitle {
-            color: #4f83c3;
-            font-size: 13px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-        .info-meta {
-            font-size: 14px;
-            color: #9ca3af;
-            margin-bottom: 28px;
-            display: flex;
-            justify-content: center;
-        }
-        .info-meta a {
-            color: #4f83c3;
-            text-decoration: none;
-        }
-        .description {
-            color: #c8ced6;
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 35px;
-            text-align: justify;
-        }
-        /* Sadece şık ve sade bir LinkedIn İkonu alanı */
-        .linkedin-icon-box {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .linkedin-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: transform 0.2s;
-        }
-        .linkedin-link:hover {
-            transform: scale(1.1);
-        }
-        .linkedin-svg {
-            width: 36px;
-            height: 36px;
-            fill: #4f83c3; /* Kurumsal mavi tonlarında sade ikon */
-            transition: fill 0.2s;
-        }
-        .linkedin-link:hover .linkedin-svg {
-            fill: #ffffff;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background: linear-gradient(135deg, #050b14 0%, #0d1527 100%); color: #f3f4f6; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+        .card { background: rgba(255, 255, 255, 0.01); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); padding: 45px 35px; border-radius: 24px; max-width: 500px; width: 100%; text-align: center; box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.7); }
+        .logo-image-box { width: 100%; max-width: 320px; margin: 0 auto 30px; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 8px; }
+        .logo-image-box img { width: 100%; height: auto; display: block; object-fit: contain; }
+        h1 { font-size: 26px; font-weight: 700; color: #ffffff; margin-bottom: 6px; letter-spacing: -0.5px; }
+        .subtitle { color: #4f83c3; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; }
+        .info-meta { font-size: 14px; color: #9ca3af; margin-bottom: 28px; display: flex; justify-content: center; }
+        .info-meta a { color: #4f83c3; text-decoration: none; }
+        .description { color: #c8ced6; font-size: 14px; line-height: 1.6; margin-bottom: 35px; text-align: justify; }
+        .linkedin-icon-box { display: flex; justify-content: center; margin-top: 20px; }
+        .linkedin-link { display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s; }
+        .linkedin-link:hover { transform: scale(1.1); }
+        .linkedin-svg { width: 36px; height: 36px; fill: #4f83c3; transition: fill 0.2s; }
+        .linkedin-link:hover .linkedin-svg { fill: #ffffff; }
     </style>
 </head>
 <body>
-
     <div class="card">
-        <div class="banner-logo-box">
-            <div class="banner-logo-text">Rme consulting</div>
-            <div class="banner-logo-line"></div>
+        <div class="logo-image-box">
+            <img src="https://ctx.ai" alt="Rme consulting">
         </div>
-        
         <h1>RME Consulting</h1>
-        <!-- Yeni Unvanınız Eklendi -->
         <div class="subtitle">Strategic Talent Advisory</div>
-        
         <div class="info-meta">
             <span>✉️ <a href="mailto:mutlu_eroglu@outlook.com">mutlu_eroglu@outlook.com</a></span>
         </div>
-        
-        <p class="description">
-            Strategic executive search professional with 20+ years of experience advising multinational organizations on startup hr, c-suite and mid to senior level talent acquisition, tech-recruitment, leadership assessment, and organizational design. Proven track record in building and managing consulting teams, leading cross-border C-level search assignments, and supporting corporate clients across sectors including technology, manufacturing, real estate, private equity, telecom, construction, pharma, retail and FMCG. Multilingual professional fluent in English and German.
-        </p>
-
-        <!-- Cümlesiz, Sadece Şık Bir LinkedIn Logosu/İkonu -->
+        <p class="description">Strategic executive search professional with 20+ years of experience...</p>
         <div class="linkedin-icon-box">
             <a href="https://linkedin.com" target="_blank" class="linkedin-link" title="LinkedIn Profile">
                 <svg class="linkedin-svg" xmlns="http://w3.org" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </a>
         </div>
     </div>
-
 </body>
 </html>
