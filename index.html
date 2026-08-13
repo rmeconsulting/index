@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RME Consulting | Executive Search & Headhunter</title>
+    <!-- İtalik ve Şık Yazı Tipi İçin Google Font Eklendi -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,7 +16,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background: linear-gradient(135deg, #090d16 0%, #111827 100%);
+            background: linear-gradient(135deg, #050b14 0%, #0d1527 100%);
             color: #f3f4f6;
             min-height: 100vh;
             display: flex;
@@ -21,30 +25,39 @@
             padding: 20px;
         }
         .card {
-            background: rgba(255, 255, 255, 0.02);
+            background: rgba(255, 255, 255, 0.01);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.07);
-            padding: 50px 35px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 45px 35px;
             border-radius: 24px;
-            max-width: 440px;
+            max-width: 500px;
             width: 100%;
             text-align: center;
-            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.7);
         }
-        .logo-placeholder {
-            width: 85px;
-            height: 85px;
-            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-            border-radius: 50%;
+        /* Gönderdiğiniz Yatay Geniş Logonun Birebir Kodla Çizilmiş Hali */
+        .banner-logo-box {
+            background-color: #030814;
+            padding: 30px 20px;
+            border-radius: 12px;
             margin: 0 auto 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 26px;
-            font-weight: 700;
-            color: #ffffff;
-            box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .banner-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #7995b3; /* Logonuzdaki tam gri/mavi tonu */
+            font-size: 38px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+        .banner-logo-line {
+            border-top: 3px solid #546d88; /* Altındaki düz kalın çizgi */
+            width: 85%;
+            margin: 0 auto;
         }
         h1 {
             font-size: 26px;
@@ -54,25 +67,42 @@
             letter-spacing: -0.5px;
         }
         .subtitle {
-            color: #60a5fa;
+            color: #4f83c3;
             font-size: 13px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 24px;
+            margin-bottom: 15px;
+        }
+        .info-meta {
+            font-size: 14px;
+            color: #9ca3af;
+            margin-bottom: 28px;
+            display: flex;
+            justify-content: center;
+        }
+        .info-meta a {
+            color: #4f83c3;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .info-meta a:hover {
+            color: #3b82f6;
+            text-decoration: underline;
         }
         .description {
-            color: #9ca3af;
-            font-size: 15px;
+            color: #c8ced6;
+            font-size: 14px;
             line-height: 1.6;
             margin-bottom: 35px;
+            text-align: justify;
         }
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
             background: #ffffff;
-            color: #111827;
+            color: #090d16;
             text-decoration: none;
             padding: 16px;
             border-radius: 12px;
@@ -81,27 +111,35 @@
             transition: all 0.25s ease;
         }
         .btn:hover {
-            background: #3b82f6;
+            background: #4f83c3;
             color: #ffffff;
             transform: translateY(-2px);
-            box-shadow: 0 12px 24px -10px rgba(59, 130, 246, 0.5);
+            box-shadow: 0 12px 24px -10px rgba(79, 131, 195, 0.5);
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <!-- RME harfleri otomatik olarak şık bir logoya dönüşecek -->
-        <div class="logo-placeholder">RME</div>
+        <!-- Gönderdiğiniz banner logonun dijital çizimi -->
+        <div class="banner-logo-box">
+            <div class="banner-logo-text">Rme consulting</div>
+            <div class="banner-logo-line"></div>
+        </div>
         
         <h1>RME Consulting</h1>
         <div class="subtitle">Executive Search & Headhunter</div>
         
+        <div class="info-meta">
+            <span>✉️ <a href="mailto:mutlu_eroglu@outlook.com">mutlu_eroglu@outlook.com</a></span>
+        </div>
+        
+        <!-- İmla Hataları Düzeltilmiş Geniş Sektörlü Yeni Hakkınızda Yazısı -->
         <p class="description">
-            Kritik pozisyonlar ve üst düzey yönetim kadroları için nokta atışı yetenek çözümleri sunuyorum. Şirketlerin geleceğini şekillendirecek doğru liderleri ve uzmanları gizlilik prensibiyle bulup organizasyonunuza kazandırıyorum.
+            Strategic executive search professional with 20+ years of experience advising multinational organizations on startup hr, c-suite and mid to senior level talent acquisition, tech-recruitment, leadership assessment, and organizational design. Proven track record in building and managing consulting teams, leading cross-border C-level search assignments, and supporting corporate clients across sectors including technology, manufacturing, real estate, private equity, telecom, construction, pharma, retail and FMCG. Multilingual professional fluent in English and German.
         </p>
 
-        <!-- Buraya daha sonra kendi LinkedIn linkinizi ekleyebilirsiniz, şimdilik standart kalabilir -->
+        <!-- Doğrudan Sizin LinkedIn Profiliniz -->
         <a href="https://linkedin.com" target="_blank" class="btn">
             LinkedIn Üzerinden İletişime Geçin
         </a>
